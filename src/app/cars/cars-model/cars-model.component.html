@@ -1,1 +1,16 @@
 <p>cars-model works!</p>
+
+<div class="col-md-3 mx-auto shadow border-border-success">
+    <div class="container ">
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let brands of modelData;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/carsVarient" routerLinkActive="active">{{modelData[0].models[i].concat}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+    {{Qbrand|json}}
+   

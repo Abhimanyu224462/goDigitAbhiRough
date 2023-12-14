@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { HttpService } from 'src/app/core/services/http.service';
 
 @Component({
@@ -8,6 +9,8 @@ import { HttpService } from 'src/app/core/services/http.service';
 })
 export class CarsBrandComponent {
   title = 'allstate-insurance';
+
+  
 
   brandList:any = [
     {
@@ -32,6 +35,8 @@ export class CarsBrandComponent {
   ]
   brandData!:{};
  brandName!:{}
+ brandQuery:any
+brandN: any|string;
 constructor(private http:HttpService){
 
 }
