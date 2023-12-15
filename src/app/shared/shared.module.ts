@@ -7,11 +7,13 @@ import { RouterModule } from '@angular/router';
 
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
     NavbarComponent,
     FooterComponent
+    
   ],
   imports: [
     CommonModule,

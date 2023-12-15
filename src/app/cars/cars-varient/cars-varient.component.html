@@ -1,1 +1,22 @@
-<p>cars-varient works!</p>
+<br><br>
+
+<div class="col-md-3 mx-auto shadow border-border-success">
+    <div class="container ">
+        <h3>Select Varient</h3>
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let brands of varientsData[0].models[0].varients;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{brands.a}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+
+
+    <!-- <p *ngFor="let brandsT of varientsData[0].models;let j = index"> -->
+        <!-- {{brands|json}} -->
+        <!-- <br>
+        {{brandsT.concat}}
+    </p> -->

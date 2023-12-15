@@ -7,6 +7,7 @@ import { CarsBrandComponent } from './cars-brand/cars-brand.component';
 import { CarsModelComponent } from './cars-model/cars-model.component';
 import { CarsVarientComponent } from './cars-varient/cars-varient.component';
 import { FormsModule } from '@angular/forms';
+import { ChoosePlanComponent } from './choose-plan/choose-plan.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     CarsComponent,
     CarsBrandComponent,
     CarsModelComponent,
-    CarsVarientComponent
+    CarsVarientComponent,
+    ChoosePlanComponent
    
   ],
   imports: [

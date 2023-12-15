@@ -10,7 +10,16 @@
                     "model": "ALTROZ",
                     "score": 100,
                     "start_date": "0001",
-                    "text": "Tata"
+                    "text": "Tata",
+                    "varients": [
+                      {"a":"ALTROZ LX"},
+                      {"a":"Altroz ZXi DuraTorq"},
+                      {"a":"ALTROZ ZX"},
+                      {"a":"ALTROZ LX 4x4"},
+                      {"a":"ALTROZ W10 Diesel"},
+                      {"a":"Altroz as10W i.4"},
+                      {"a":"Altroz 1.4 TDSI"} 
+                    ]
                 },
                 {
                     "concat": "TATA INDICA VISTA",
