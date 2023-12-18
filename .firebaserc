@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "abhimanyu-godigit",
+    "staging": "abhimanyu-godigit"
+  },
+  "targets": {},
+  "etags": {}
+}

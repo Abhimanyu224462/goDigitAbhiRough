@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'cars', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) }, 
   { path: 'bike', loadChildren: () => import('./bike/bike.module').then(m => m.BikeModule) }, 
   { path: 'health', loadChildren: () => import('./health/health.module').then(m => m.HealthModule) },
+  {path:'',redirectTo:'/cars',pathMatch:'full'}
  
 ];
 

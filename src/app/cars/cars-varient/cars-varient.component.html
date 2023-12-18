@@ -1,20 +1,130 @@
 <br><br>
 
-<div class="col-md-3 mx-auto shadow border-border-success">
-    <div class="container ">
-        <h3>Select Varient</h3>
-      <table class="table table-borderless">
+
+<div class="container col-md-10">
+  <h2>Varient</h2>
+  <div class="container row ">
+    <div class="col-md-4">
+      <h4>Select Fuel</h4>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle px-5 text-align-right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Fuel
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+          <li><a class="dropdown-item" value="Diesel" (click)="SelectedPreference()" >Diesel</a></li>
+          <li><a class="dropdown-item" value="Petrol" (click)="SelectedPreference()" >Petrol</a></li>
+          <li><a class="dropdown-item" >Electric</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Select Varient</h4>
+      <table class="table table-borderless" *ngIf="valid == diesel; else elseBlock">
         <tbody>
-          <tr *ngFor="let brands of varientsData[0].models[0].varients;let i = index">
-            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{brands.a}}</td>   
+          <tr *ngFor="let varients of varientsData[0].modelList;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{varients.new_variant}}</td>   
           </tr>
         </tbody>
       </table>
+      
+      <ng-template #elseBlock>
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let varients of varientsData[0].modelList;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{varients.new}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    </ng-template>
+
+    <!-- <ng-template #thenBlock>
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let varients of varientsData[0].modelList;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{varients.new}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    </ng-template> -->
     </div>
+  </div>
+</div>
+
+<!-- <table class="table table-borderless">
+  <tbody>
+    <tr *ngFor="let fuelvarients of varientsFuelData[0].modelList;let i = index">
+      <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{fuelvarients["Fuel Type"]}}</td>   
+    </tr>
+  </tbody>
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container row ">
+  <div class=" mx-auto shadow border-border-success">
+      
+  
+
+<div class=" mx-auto shadow border-border-success">
+      
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let varients of varientsData[0].modelList;let i = index">
+            <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{varients.new_variant}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    
     </div>
 
+    
+      </div>
+
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <tr *ngFor="let brands of varientsData[0].models[0].varients;let i = index">
+      <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{brands.a}}</td>   
+    </tr> -->
     <!-- <p *ngFor="let brandsT of varientsData[0].models;let j = index"> -->
         <!-- {{brands|json}} -->
         <!-- <br>
