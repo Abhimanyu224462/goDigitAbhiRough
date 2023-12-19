@@ -62,8 +62,9 @@ electricFuelData(){
 diesel:boolean = true
 petrol:boolean = false
 valid:boolean = false
-
-SelectedPreference(){
+show:string = ""
+SelectedPreference(data:any){
+  this.show = data.target.value
   this.valid = !this.valid
 }
 }

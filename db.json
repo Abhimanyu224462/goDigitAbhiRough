@@ -2765,7 +2765,8 @@
     }],
 
     
-    "get-eligible-plan":{
+    "get-eligible-plan":[
+      {
         "plans": [
           {
             "planName": "ComprehensiveCover",
@@ -3833,4 +3834,5 @@
         "eligibleNcb": null,
         "claimButton": true
       }
+    ]
 }

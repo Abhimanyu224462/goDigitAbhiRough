@@ -9,25 +9,26 @@
       <h4>Select Fuel</h4>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle px-5 text-align-right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Fuel Type
+          Select Fuel
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
-          <li><a class="dropdown-item" value="Diesel" (click)="SelectedPreference()" >Diesel</a></li>
-          <li><a class="dropdown-item" value="Petrol" (click)="SelectedPreference()" >Petrol</a></li>
-          <li><a class="dropdown-item" value="Electric" (click)="SelectedPreference()">Electric</a></li>
+          <li><a class="dropdown-item" value="Diesel" name="diesel" (click)="SelectedPreference($event)" >Diesel</a></li>
+          <li><a class="dropdown-item" value="Petrol" (click)="SelectedPreference($event)" >Petrol</a></li>
+          <li><a class="dropdown-item" value="Electric" (click)="SelectedPreference($event)">Electric</a></li>
         </ul>
       </div>
     </div>
     <div class="col-md-4">
       <h4>Select Varient</h4>
-      <table class="table table-borderless" *ngIf="valid == diesel; else elseBlock">
+      
+      <table class="table table-responsive " *ngIf="valid == diesel; else elseBlock">
         <tbody>
           <tr *ngFor="let varients of petrolModel;let i = index">
             <td  style="font-weight: 700;cursor: pointer;" routerLink="/cars/choosePlan" routerLinkActive="active">{{varients.new_variant}}</td>   
           </tr>
         </tbody>
       </table>
-      
+    
       <ng-template #elseBlock>
       <table class="table table-borderless">
         <tbody>
