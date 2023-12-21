@@ -11,6 +11,7 @@ export class CarsVarientComponent {
   varientsData:any
   varientsFuelData:any
   varientsEFuelData:any
+
   constructor(private http:HttpService){
 
   }
@@ -67,4 +68,20 @@ SelectedPreference(data:any){
   this.show = data.target.value
   this.valid = !this.valid
 }
+electricVarient:any
+sElectric:boolean = false
+selectElectric(){
+  if(this.sElectric = false){
+    // this.electricVarient=this.electricModel
+  }
+  
+}
+toggelVarient:any
+tDiesel:boolean = false
+toggleButtonChange1(){
+  if(this.tDiesel = true){
+    this.toggelVarient=this.electricModel 
+  }
+}
+
 }
